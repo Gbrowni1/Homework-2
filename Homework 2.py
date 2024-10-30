@@ -35,7 +35,6 @@ def Translator(text):
 "X" : "-..-",
 "Y" : "-.--",
 "Z" : "--..",
-" " : " ", #Space
 }
 
     morse_phrase = []
@@ -47,7 +46,7 @@ def Translator(text):
             morse_phrase.append(Alpha_Translate[letters])
 
         elif letters not in text.upper():
-            morse_phrase.append()
+            morse_phrase.append(" ") #Space
 
 
     return ' '.join(morse_phrase)
